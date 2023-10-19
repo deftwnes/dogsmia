@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECE8E1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1vw;
+    align-items: center;
+    background-color: white;
+    font-size: 5vw;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin: 3vw;
+}
+
+#dogImageContainer {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 1vw 6vw;
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition:  0.3s ease;
+    position: fixed;
+    margin-left: 8vw;
+}
+button:hover {
+    background-color: #a1a1a1;
+    transform: scale(1.1);
+}
+
+.dogImage {
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 4vw;
+        align-items: center;
+        background-color: white;
+        font-size: 10vw;
+    }
+
+    .card img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        margin: 3vw;
+    }
+
+    button {
+        padding: 1vw 6vw;
+        font-size: 6vw;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition:  0.3s ease;
+        position: fixed;
+        margin-left: 15vw;
+        margin-top: 45vh;
+    }
+    button:hover {
+        background-color: #a1a1a1;
+        transform: scale(1.1);
+    }
+
+    .dogImage {
+
+        font-size: 10vw;
+        margin-top: 40vh;
+        width: 100%;
+    }
+
+    .imagemdog {
+        padding: 5vh;
+    }
+}
+
+

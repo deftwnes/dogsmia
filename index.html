@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./estilos/style.css" rel="stylesheet">
+    <link rel="icon" href="cachorro.png"/>
+    <title>DOGS T_T</title>
+</head>
+<header>
+    <nav>
+        <div class="logo">DOGS!</div> 
+    </nav>
+</header>
+<body>
+    <style type="text/css">
+        body {background-image: url(https://i.pinimg.com/564x/5b/57/eb/5b57eb63b892e50231b9ecc6f54dd7e5.jpg)}
+    </style>
+    <div>
+        <button onclick="getRandomDogImage()">Cachorrinho aleatório!</button>
+    </div>
+    
+    <div id="dogImageContainer">
+        <div class="imagemdog">
+            <img id="dogImage" src="" alt="Random Dog Image">
+        </div>
+    </div>
+
+
+
+    <script>
+        function getRandomDogImage() {
+            fetch('https://dog.ceo/api/breeds/image/random')
+                .then(response => response.json())
+                .then(data => {
+                    const dogImageElement = document.getElementById('dogImage');
+                    dogImageElement.src = data.message;
+                    dogImageElement.alt = 'Random Dog Image';
+                })
+                .catch(error => console.error('Error fetching random dog image:', error));
+        }
+        window.onload = getRandomDogImage;
+    </script>
+</body>
+</html>
