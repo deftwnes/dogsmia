@@ -58,10 +58,10 @@ button:hover {
 
 .dogImage {
     font-size: 5vw;
-    display: flex;
     justify-content: center;
     width: 100%;
 }
+
 
 @media screen and (max-width: 768px) {
     nav {
